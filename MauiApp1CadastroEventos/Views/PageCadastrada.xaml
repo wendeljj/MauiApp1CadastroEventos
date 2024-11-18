@@ -15,24 +15,30 @@
      VerticalTextAlignment="Center"
             FontAttributes ="Bold"/>
 
-        <Grid RowDefinitions="*, *, *, *,*,*, *" ColumnDefinitions="*,*" ColumnSpacing="40">
+        <Grid RowDefinitions="*, *, *, *, *, *, *, *" ColumnDefinitions="*,*" ColumnSpacing="40">
             <Label Padding="10" Grid.Row="0" Grid.Column="0" Text="Nome do Evento:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding ="10" Grid.Row="0" Grid.Column="1" Text="siu" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding ="10" Grid.Row="0" Grid.Column="1" Text="{Binding NomeEvento}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
             
             <Label Padding="10" Grid.Row="1" Grid.Column="0" Text="Local do Evento:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding="10" Grid.Row="1" Grid.Column="1" Text="Rua Alvenópilis 89" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding="10" Grid.Row="1" Grid.Column="1" Text="{Binding LocalEvento}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
 
             <Label Padding="10" Grid.Row="2" Grid.Column="0" Text="Quantidade de Participantes:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding ="10" Grid.Row="2" Grid.Column="1" Text="200" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding ="10" Grid.Row="2" Grid.Column="1" Text="{Binding QntParticipantes}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
 
             <Label Padding="10" Grid.Row="3" Grid.Column="0" Text="Custo por Participantes:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding ="10" Grid.Row="3" Grid.Column="1" Text="10" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding ="10" Grid.Row="3" Grid.Column="1" Text="{Binding CustoParticipantes, StringFormat='{}{0:c}'}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
 
-            <Label Padding="10" Grid.Row="4" Grid.Column="0" Text="Duração em dias:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding ="10" Grid.Row="4" Grid.Column="1" Text="10" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding="10" Grid.Row="4" Grid.Column="0" Text="Data de Início:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Padding ="10" Grid.Row="4" Grid.Column="1" Text="{Binding DataInicio, StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
 
-            <Label Padding="10" Grid.Row="5" Grid.Column="0" Text="Valor Total:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <Label Padding ="10" Grid.Row="5" Grid.Column="1" Text="1000" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Label Padding="10" Grid.Row="5" Grid.Column="0" Text="Data de Término:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Padding ="10" Grid.Row="5" Grid.Column="1" Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+
+            <Label Padding="10" Grid.Row="6" Grid.Column="0" Text="Duração em dias:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Padding ="10" Grid.Row="6" Grid.Column="1" Text="{Binding DiasTotais}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
+
+            <Label Padding="10" Grid.Row="7" Grid.Column="0" Text="Valor Total:" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Padding ="10" Grid.Row="7" Grid.Column="1" Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" TextColor="White" TextTransform="Uppercase" HorizontalOptions="Center"/>
 
         </Grid>
 
