@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp1CadastroEventos", "MauiApp1CadastroEventos\MauiApp1CadastroEventos.csproj", "{0910A7A1-6B52-49E8-974D-3781A065C0D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0910A7A1-6B52-49E8-974D-3781A065C0D8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77A279F1-4E39-4F93-9A44-8D14B6BB4D09}
+	EndGlobalSection
+EndGlobal

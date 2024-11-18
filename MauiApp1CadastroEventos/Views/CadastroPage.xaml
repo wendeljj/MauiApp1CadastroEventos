@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1CadastroEventos.Views.CadastroPage"
+             Title="CadastroPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor ="{StaticResource Gray950}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+        <Label 
+     Text="Cadastro de Evento"
+     TextTransform="Uppercase"
+     TextColor="Beige"
+     FontSize="32"
+     VerticalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontAttributes ="Bold"/>
+
+        <Grid RowDefinitions="*, *, *, *,*,*" ColumnDefinitions="*,*" ColumnSpacing="40">
+            <Label Padding="10" Grid.Row="0" Grid.Column="0" Text="Nome do Evento" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Entry x:Name="event_name" Grid.Row="1" Grid.Column="0" ReturnType="Next" BackgroundColor="White" Keyboard="Text"/>
+            <Label Padding="10" Grid.Row="0" Grid.Column="1" Text="Local do Evento" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Entry x:Name="local_event" Grid.Row="1" Grid.Column="1" ReturnType="Next" BackgroundColor="White" Keyboard="Text"/>
+            
+            <Label Padding="10" Grid.Row="2" Grid.Column="0" Text="Quantidade de Participantes" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Entry x:Name="qnt_participantes" Grid.Row="3" Grid.Column="0" ReturnType="Next" BackgroundColor="White" Keyboard="Numeric"/>
+            <Label Padding="10" Grid.Row="2" Grid.Column="1" Text="Custo por Participante" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <Entry x:Name="custo_participante" Grid.Row="3" Grid.Column="1" ReturnType="Next" BackgroundColor="White" Keyboard="Numeric"/>
+
+            <Label Padding="10" Grid.Row="4" Grid.Column="0" Text="Data de Início" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <DatePicker HorizontalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1" x:Name="data_checkin" Format="dd/MM/yyyy" BackgroundColor="White" DateSelected="data_checkin_DateSelected"/>
+
+            <Label Padding="10" Grid.Row="5" Grid.Column="0" Text="Data de Término" TextColor="Beige" TextTransform="Uppercase" HorizontalOptions="Center"/>
+            <DatePicker HorizontalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="1" x:Name="data_checkout" Format="dd/MM/yyyy" BackgroundColor="White"/>
+        </Grid>
+
+        <Button Padding="10" Text="Avançar" BackgroundColor="Beige" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" Clicked="Button_Clicked"
+                />
+
+    </VerticalStackLayout>
+</ContentPage>
